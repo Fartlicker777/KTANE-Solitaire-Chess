@@ -8,10 +8,12 @@ using KModkit;
 using Rnd = UnityEngine.Random;
 using Math = ExMath;
 
-public class Template : MonoBehaviour {
+public class SolitaireChess : MonoBehaviour {
 
    public KMBombInfo Bomb;
    public KMAudio Audio;
+
+   enum GridType { Empty, Attacked, Taken}
 
    static int ModuleIdCounter = 1;
    int ModuleId;
